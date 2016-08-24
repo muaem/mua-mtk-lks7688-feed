@@ -10,11 +10,11 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit
   TITLE:=MTK LinkIt Smart board support package
-  HIDDEN:=1
+  HIDDEN:=0
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
   	+gdbserver +curl +strace +coreutils +coreutils-stty \
   	+avahi-nodbus-daemon +mountd +mjpg-streamer \
-        +libmraa + libupm \
+	+libmraa + libupm \
 	+uhttpd +rpcd +rpcd-mod-iwinfo +samba36-server \
 	+luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-samba +luci-lib-json \
 	+rpcd-mod-rpcsys +cgi-io +avrdude +spi-tools +uboot-envtools \
