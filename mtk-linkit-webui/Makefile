@@ -20,8 +20,9 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit-webui
   TITLE:=LinkIt Smart 7688 Webui
-  DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688
+  DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 @TARGET_ramips_mt7688_Transformer
   HIDDEN:=0
+  DEFAULT:=y
 endef
 
 define Build/Configure
